@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>I2OLATE Online Store</title>
+        <meta name="viewport" content="width= device-width, initial-scale= 1,0"
+>    <style>
+       .wear-button1 {
+        background-color: white;
+        border: none;
+        width: 90px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        border-radius: 2px;
+        font-size: 15px
+       }
+       .wear-button2 {
+        background-color: white;
+        border: none;
+        width: 90px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        border-radius: 2px;
+        font-size: 15px
+       }
+
+       .wear-button1:link {
+        color: black;
+       text-decoration: none;
+       }
+       
+       .wear-button1:hover {
+       background-color: rgb(239, 233, 233);
+       color: black;
+       text-decoration: underline;
+       }
+
+       .wear-button1:active {
+        background-color: rgb(231, 222, 222);
+        color: black;
+       text-decoration: underline;
+       }
+
+       .wear-button1:visited {
+        color: black;
+        text-decoration: none;
+       }
+
+
+        .wear-button2:link {
+            color: black;
+            text-decoration: none;
+        }
+
+       .wear-button2:hover {
+       background-color: rgb(239, 233, 233);
+       color: black;
+       text-decoration: underline;
+       }
+
+       .wear-button2:active {
+        background-color: rgb(231, 222, 222);
+        color: black;
+        text-decoration: underline;
+       }
+
+
+       .wear-button2:visited {
+        color: black;
+       text-decoration: none;
+       }
+
+
+       .chainmask {
+        object-fit: contain;
+        display: inline-block;
+        
+       }
+       
+       .textbox {
+        display: inline-block;
+        font-size: 40px;
+        width: 400px;
+       }
+
+        input[type=text] {
+        display: inline-block;
+        
+        padding: 0;
+        height: 20px;
+        position: relative;
+        left: 0;
+        outline: none;
+        border: 2px solid #cdcdcd;
+        border-color: rgba(0, 0, 0, .15);
+        background-color: white;
+        font-size: 15px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       }
+
+       .topnav {
+        display:inline-block;
+        
+        }
+
+       .i2olatepc {
+        display: block;
+        margin-bottom: 10px;
+       }
+       
+       
+
+       p {
+        font-family: 'franklin gothic medium';
+       }
+
+       div {
+        justify-content: center;
+       }
+
+       #container {
+        display: flex;
+        align-items: center;
+       }
+
+       #container p {
+        margin-left: 20px;
+        max-width: 350px;
+        text-align: left;
+        font-style: normal;
+     }
+
+       .about {
+        display: inline-block;
+        
+       }
+
+       .cart {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color:rgb(239, 233, 233);
+        width: 100px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        font-size: 15px;
+        border: none;
+        border-radius: 3px;
+        height: 25px;
+        display: inline-block;
+       }
+       .cart:hover {
+       opacity: 0.75; 
+       }
+
+       .cart:active {
+        background-color: rgb(231, 222, 222);
+        opacity: 0.6;
+       }
+
+       .cc {
+        width: 650px;
+        height: 100px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 37px;
+        border: none;
+        border-radius: none;
+        cursor: pointer;
+        background-color: inherit;
+        background-image: url("images/button1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #ffffff;
+        transition: ease 0.2s;
+       }
+    
+       .cc:hover {
+        opacity: 0.8;
+       }
+
+       .cc:active {
+        opacity: 0.6;
+       }
+           
+       .cctxt {
+        text-decoration-color: #cdcdcd;
+       }
+       
+       .site-footer
+{
+  background-color:#3c3d40;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#bfc9de;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+
+a {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}   
+
+a:visited {
+    color: black;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.ca:link {
+    color: white;
+    text-decoration: none;
+}
+
+.ca:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.ca:visited {
+    color: white;
+    text-decoration: none;
+}
+
+   .gallery{
+        display: inline-block;
+   }
+    
+    </style>
+    </head>
+    <body>
+      
+   
+        <center>
+            <div id="divCheckbox" style="visibility: hidden">bsdbibnin</div>
+        <a href="index.html"><img src="images/i2olateimage2.png"  class="i2olatepc" width="300"></a>
+        <p style="font-size: 20px"><i><b>FOR THOSE WHO NEED A LITTLE MORE &lt;SPACE&gt;.</b></i></p>
+    
+    <div id="divCheckbox" style="visibility: hidden">bsdbibnin</div>
+    <div  class="topnav">
+        <input type="text" placeholder=" Search...">
+    </div> 
+
+   
+    <button class="cart" >Add to CART</button>
+    
+
+   
+        <div id="divCheckbox" style="visibility: hidden">bsdbibnin</div>
+<a href="body.html"><button class="wear-button2"><p>body wear</p></button></a>
+            
+<a href="chrysalis.html"><button class="wear-button1"><p>head wear</p></button></a>
+        
+        
+        
+   <div id="divCheckbox" style="visibility: hidden">bsdbibnin</div>
+  
+
+<div id="container">
+
+<div>
+      <img src="images/eddiehs.PNG" width="350px">
+  </div>
+<div>
+    <p style="font-size: 30px"><b>HAND MASK</b></p>
+    <p style="font-size: 20px"><b>Chrysalis Collection<br>£70.00</b></p>
+    <p style="font-size: 15px"><b>Materials:</b> Mudroc plaster, Wool, Plastic/Glass beads<br>
+        <b>Description:</b> A plaster-casted hand using Mudroc, created into a mask using crochet. 
+        Seams are loose and weighed down with a mix of plastic/glass beads of varying colour.<br>
+        <b>About:</b> The Chrysalis Collection is originally inspired by the process of chrysalis, usually seen in caterpillars.
+         We wanted to find ways to mimic and create pieces that were on-brand, fashionable and embodied the theme we were inspired by.
+          After expanding our themes and ideas for this collection, we made pieces based on the process of chrysalis, self-isolation 
+          and society during and post-COVID-19.
+          <br> The 'Hand Mask' was created with Mudroc, a rough material when dry and flakey at the edges. We thought this material was
+          perfect for the 'chrysalis' or 'cocoon' effect we were looking for.
+          <br><br><button class="cart" >ADD TO CART</button>
+</div>
+
+</div>
+
+<div id="divCheckbox" style="visibility: hidden">bsdbibnin</div>
+<div id="divCheckbox" style="visibility: hidden">bsdbibnin</div>
+
+<p style="font-size: 30px"><b>GALLERY</b></p>
+
+<div class="gallery">
+<img src="images/eddiepose.PNG" width="185px">
+</div>
+<div id="divCheckbox" style="visibility: hidden; display: inline-block">bej</div>
+<div class="gallery">
+    <img src="images/eddiehs.PNG" width="185px">
+    </div>
+    <div id="divCheckbox" style="visibility: hidden; display: inline-block">bej</div>
+    <div class="gallery">
+        <img src="images/IMG-3552.PNG" width="185px">
+        </div>
+ 
+<div id="divCheckbox" style="visibility: hidden">bsdbibnin</div>
+<div id="divCheckbox" style="visibility: hidden">bsdbibnin</div>
+
+<div class="wholecc">
+<a href="chrysalis.html" class="ca">
+    <button class="cc">
+<div class="cctxt"><b>VIEW THE CHRYSALIS COLLECTION</b></div> 
+</a>
+</button>
+</div>
+
+<div id="divCheckbox" style="visibility: hidden">bsdbibnin</div>
+<div id="divCheckbox" style="visibility: hidden">bsdbibnin</div>
+<div id="divCheckbox" style="visibility: hidden">bsdbibnin</div>
+</center>
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      
+       
+        <div class="col-xs-6 col-md-3">
+          <h6 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">&nbsp;&nbsp;Quick Links</h6>
+          <ul class="footer-links">
+            
+            <li>&nbsp;&nbsp;<a style="color:white" href="">Contact Us</a></li>
+            <li>&nbsp;&nbsp;<a style="color:white" href="">Contribute</a></li>
+            <li>&nbsp;&nbsp;<a style="color:white" href="">Privacy Policy</a></li>
+            <li>&nbsp;&nbsp;<a style="color:white" href="">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">&nbsp;&nbsp;Copyright &copy; 2023 All Rights Reserved by 
+       <a style="color:white" href="#">I2OLATE</a>.
+          </p>
+        </div>
+
+       
+      </div>
+    </div>
+</footer>
+    
+    </body>
